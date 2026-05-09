@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "category": "Frontend",
+    "description": "El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "difficulty": "Básico",
+    "officialUrl": "https://developer.mozilla.org/es/docs/Web/HTML",
+    "audio": "audio-html.mp3"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "category": "Frontend",
+    "description": "Hojas de Estilo en Cascada (CSS) es el lenguaje utilizado para describir la presentación de un documento escrito en HTML. Permite agregar colores, layouts y fuentes.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "difficulty": "Básico",
+    "officialUrl": "https://developer.mozilla.org/es/docs/Web/CSS",
+    "audio": "audio-css.mp3"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "category": "Frontend",
+    "description": "Un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (JIT) con funciones de primera clase. Aporta interactividad y lógica a la web.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+    "audio": "audio-js.mp3"
+  },
+  {
+    "id": 4,
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "Un framework de JavaScript progresivo para construir interfaces de usuario. Se basa en componentes y un modelo reactivo muy eficiente.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://vuejs.org/"
+  },
+  {
+    "id": 5,
+    "name": "JSON",
+    "category": "Herramientas",
+    "description": "JavaScript Object Notation (JSON) es un formato de texto ligero para el intercambio de datos. Muy fácil de leer y escribir para los humanos y para las máquinas.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
+    "difficulty": "Básico",
+    "officialUrl": "https://www.json.org/json-es.html"
+  },
+  {
+    "id": 6,
+    "name": "Git",
+    "category": "Herramientas",
+    "description": "Un sistema de control de versiones distribuido, gratuito y de código abierto. Diseñado para manejar todo, desde proyectos pequeños hasta muy grandes.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://git-scm.com/"
+  },
+  {
+    "id": 7,
+    "name": "GitHub",
+    "category": "Herramientas",
+    "description": "Una plataforma de alojamiento para el desarrollo de software y control de versiones usando Git. Ofrece control de acceso y funciones de colaboración.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://github.com/"
+  },
+  {
+    "id": 8,
+    "name": "SQL",
+    "category": "Bases de Datos",
+    "description": "Structured Query Language (SQL) es un lenguaje estándar para almacenar, manipular y recuperar datos en bases de datos relacionales.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://es.wikipedia.org/wiki/SQL"
+  },
+  {
+    "id": 9,
+    "name": "APIs REST",
+    "category": "Backend",
+    "description": "Transferencia de Estado Representacional (REST). Es una arquitectura de software que define un conjunto de restricciones a ser usadas para crear servicios web.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "difficulty": "Avanzado",
+    "officialUrl": "https://aws.amazon.com/es/what-is/restful-api/"
+  },
+  {
+    "id": 10,
+    "name": "Seguridad Web",
+    "category": "Seguridad",
+    "description": "Prácticas y tecnologías para proteger aplicaciones web de ataques cibernéticos. Incluye cifrado, protección contra inyecciones SQL y XSS.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+    "difficulty": "Avanzado",
+    "officialUrl": "https://developer.mozilla.org/es/docs/Web/Security"
+  }
+]

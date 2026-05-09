@@ -1,0 +1,51 @@
+:root {
+  /* Paleta clara */
+  --primary-color: #1e3a8a; /* Azul oscuro */
+  --secondary-color: #3b82f6; /* Azul claro */
+  --accent-color: #eab308; /* Amarillo */
+  
+  --bg-color: #f8fafc;
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --card-bg: #ffffff;
+  --card-header-bg: #f1f5f9;
+  --border-color: #e2e8f0;
+  --input-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode {
+  /* Paleta oscura */
+  --primary-color: #0f172a; /* Azul casi negro */
+  --secondary-color: #2563eb; 
+  --accent-color: #f59e0b;
+  
+  --bg-color: #020617;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --card-bg: #1e293b;
+  --card-header-bg: #0f172a;
+  --border-color: #334155;
+  --input-bg: #0f172a;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Transiciones suaves para la aplicación entera */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
