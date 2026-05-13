@@ -78,7 +78,7 @@ defineEmits(['update:searchTerm', 'update:selectedCategory']);
 
 .search-input:focus, .category-select:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 

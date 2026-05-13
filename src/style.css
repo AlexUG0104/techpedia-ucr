@@ -15,19 +15,19 @@
 }
 
 body.dark-mode {
-  /* Paleta oscura */
-  --primary-color: #0f172a; /* Azul casi negro */
-  --secondary-color: #2563eb; 
+  /* Paleta oscura - FULL DARK */
+  --primary-color: #000000; 
+  --secondary-color: #3b82f6; 
   --accent-color: #f59e0b;
   
-  --bg-color: #020617;
+  --bg-color: #000000;
   --text-color: #f8fafc;
   --text-muted: #94a3b8;
-  --card-bg: #1e293b;
-  --card-header-bg: #0f172a;
-  --border-color: #334155;
-  --input-bg: #0f172a;
-  --shadow-color: rgba(0, 0, 0, 0.4);
+  --card-bg: #000000;
+  --card-header-bg: #000000;
+  --border-color: #333333;
+  --input-bg: #000000;
+  --shadow-color: rgba(255, 255, 255, 0.05);
 }
 
 * {
@@ -39,7 +39,7 @@ body {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Se elimina la transición para que el cambio a negro sea instantáneo y evitar cualquier tono intermedio no deseado */
   min-height: 100vh;
 }
 

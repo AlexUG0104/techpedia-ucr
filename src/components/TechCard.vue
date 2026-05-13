@@ -55,7 +55,7 @@ defineProps({
 .tech-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px var(--shadow-color);
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
 }
 
 .card-header {
@@ -91,7 +91,7 @@ defineProps({
 }
 
 /* Category Colors */
-.badge.category { background-color: var(--primary-color); color: white; }
+.badge.category { background-color: var(--secondary-color); color: white; }
 .badge.frontend { background-color: #3b82f6; }
 .badge.backend { background-color: #10b981; }
 .badge.herramientas { background-color: #8b5cf6; }
@@ -106,7 +106,7 @@ defineProps({
 /* Ajuste oscuro para los badges de dificultad */
 :global(.dark-mode) .badge.básico { background-color: #14532d; color: #bbf7d0; }
 :global(.dark-mode) .badge.intermedio { background-color: #713f12; color: #fef08a; }
-:global(.dark-mode) .badge.avanzado { background-color: #7f1d1d; color: #fecaca; }
+:global(.dark-mode) .badge.avanzado { background-color: #000000; color: #ffffff; border: 1px solid #333; }
 
 .card-body {
   padding: 1.5rem;
@@ -137,7 +137,7 @@ defineProps({
 
 .link-btn {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s;
@@ -147,7 +147,7 @@ defineProps({
 }
 
 .link-btn:hover {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: white;
 }
 

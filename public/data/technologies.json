@@ -7,7 +7,7 @@
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/HTML",
-    "audio": "audio-html.mp3"
+    "audio": "html.mp3"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/CSS",
-    "audio": "audio-css.mp3"
+    "audio": "css.mp3"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/JavaScript",
-    "audio": "audio-js.mp3"
+    "audio": "JavaScript.mp3"
   },
   {
     "id": 4,

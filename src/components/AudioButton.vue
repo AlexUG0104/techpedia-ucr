@@ -69,7 +69,7 @@ onUnmounted(() => {
 }
 
 .audio-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   transform: translateY(-2px);
 }
 

@@ -129,7 +129,7 @@ const filteredTechnologies = computed(() => {
 /* Animación de carga */
 .loader {
   border: 4px solid var(--border-color);
-  border-top: 4px solid var(--primary-color);
+  border-top: 4px solid var(--secondary-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
