@@ -27,11 +27,21 @@
           v-for="tech in filteredTechnologies" 
           :key="tech.id" 
           :tech="tech" 
+          @open-modal="openModal"
         />
       </div>
     </main>
 
     <Footer />
+
+    <!-- Modal de Detalles -->
+    <Teleport to="body">
+      <TechModal 
+        v-if="selectedTech" 
+        :tech="selectedTech" 
+        @close="closeModal" 
+      />
+    </Teleport>
   </div>
 </template>
 
@@ -40,6 +50,7 @@ import { ref, computed, onMounted, watch } from 'vue';
 import Header from './components/Header.vue';
 import SearchFilter from './components/SearchFilter.vue';
 import TechCard from './components/TechCard.vue';
+import TechModal from './components/TechModal.vue';
 import Footer from './components/Footer.vue';
 
 // Variables reactivas
@@ -49,6 +60,15 @@ const selectedCategory = ref('');
 const darkMode = ref(false);
 const loading = ref(true);
 const error = ref(null);
+const selectedTech = ref(null);
+
+const openModal = (tech) => {
+  selectedTech.value = tech;
+};
+
+const closeModal = () => {
+  selectedTech.value = null;
+};
 
 // Alternar tema y aplicarlo al body
 const toggleTheme = () => {

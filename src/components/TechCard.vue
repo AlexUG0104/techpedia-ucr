@@ -21,9 +21,9 @@
       <AudioButton v-if="tech.audio" :audioSrc="tech.audio" />
       <div v-else class="spacer"></div>
       
-      <a :href="tech.officialUrl" target="_blank" rel="noopener noreferrer" class="link-btn">
+      <button @click="$emit('open-modal', tech)" class="link-btn">
         Ver más 🔗
-      </a>
+      </button>
     </div>
   </article>
 </template>
@@ -37,6 +37,8 @@ defineProps({
     required: true
   }
 });
+
+defineEmits(['open-modal']);
 </script>
 
 <style scoped>
@@ -137,6 +139,8 @@ defineProps({
 
 .link-btn {
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   color: var(--secondary-color);
   font-weight: 600;
   font-size: 0.9rem;
@@ -144,6 +148,7 @@ defineProps({
   padding: 0.5rem 1rem;
   border-radius: 8px;
   background: rgba(37, 99, 235, 0.1);
+  font-family: inherit;
 }
 
 .link-btn:hover {

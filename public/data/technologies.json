@@ -4,36 +4,156 @@
     "name": "HTML",
     "category": "Frontend",
     "description": "El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.",
+    "detailedDescription": "HTML (HyperText Markup Language) no es un lenguaje de programación, sino un lenguaje de marcado que define la estructura del contenido web. Utiliza una serie de etiquetas o elementos para envolver diferentes partes del contenido y hacer que se comporten de cierta manera en el navegador.",
+    "purpose": "Sirve como el esqueleto de cualquier página web. Se encarga de definir qué es un encabezado, un párrafo, una imagen, un enlace o una tabla, estructurando la información para que el navegador sepa cómo interpretarla.",
+    "features": [
+      "Lenguaje de marcado basado en etiquetas.",
+      "Totalmente semántico (etiquetas con significado, e.g., <header>, <article>).",
+      "Permite integración nativa de multimedia (<video>, <audio>).",
+      "Total compatibilidad con todos los navegadores modernos."
+    ],
+    "advantages": [
+      "Curva de aprendizaje muy suave.",
+      "No requiere de software especial, solo un editor de texto plano.",
+      "Optimizado para motores de búsqueda (SEO) si se usa correctamente.",
+      "Gran cantidad de comunidad y recursos gratuitos."
+    ],
+    "codeExample": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Mi primera página</title>\n</head>\n<body>\n  <h1>¡Hola, Mundo!</h1>\n  <p>Este es un párrafo de ejemplo en <strong>HTML</strong>.</p>\n</body>\n</html>",
+    "curiosities": [
+      "Fue creado por Tim Berners-Lee en 1991 para compartir documentos científicos.",
+      "La primera versión de HTML tenía solo 18 etiquetas, ¡hoy existen más de 100!",
+      "Antes de HTML5, se necesitaban plugins como Flash para reproducir video y audio."
+    ],
+    "youtubeId": "rbuYtrNUxg4",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/HTML",
-    "audio": "html.mp3"
+    "audio": "html.mp3",
+    "resources": [
+      {
+        "title": "Curso Gratis de HTML5 de Fazt",
+        "type": "Video de YouTube",
+        "url": "https://www.youtube.com/watch?v=3nYLPhqc4z8"
+      },
+      {
+        "title": "Guía completa de HTML (W3Schools)",
+        "type": "Tutorial Interactivo",
+        "url": "https://www.w3schools.com/html/"
+      }
+    ]
   },
   {
     "id": 2,
     "name": "CSS",
     "category": "Frontend",
     "description": "Hojas de Estilo en Cascada (CSS) es el lenguaje utilizado para describir la presentación de un documento escrito en HTML. Permite agregar colores, layouts y fuentes.",
+    "detailedDescription": "CSS (Cascading Style Sheets) es el lenguaje que complementa a HTML para darle estilo y diseño. Controla aspectos visuales como colores, tipografías, márgenes, alineaciones y la adaptación de la página a distintos tamaños de pantalla (diseño responsivo).",
+    "purpose": "Separar el contenido (HTML) del diseño visual (CSS). Esto permite mantener un código más limpio, facilitar la accesibilidad y crear experiencias de usuario atractivas y modernas.",
+    "features": [
+      "Funciona mediante selectores y reglas de estilo.",
+      "Es en cascada: las reglas más específicas sobreescriben a las más generales.",
+      "Permite animaciones y transiciones suaves sin necesidad de JavaScript.",
+      "Soporta variables y cálculos nativos (var(), calc())."
+    ],
+    "advantages": [
+      "Permite un diseño responsivo a través de Media Queries.",
+      "Mejora los tiempos de carga al reusar hojas de estilo compartidas.",
+      "Ofrece gran control sobre el layout con Flexbox y CSS Grid.",
+      "Comunidad inmensa con frameworks y librerías populares (Tailwind, Bootstrap)."
+    ],
+    "codeExample": "/* Estilo para un botón moderno */\n.btn-primary {\n  background-color: #3b82f6;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 8px;\n  transition: background-color 0.3s ease;\n}\n\n.btn-primary:hover {\n  background-color: #2563eb;\n}",
+    "curiosities": [
+      "El 'Cascading' en su nombre significa que si hay estilos conflictivos, el navegador aplica reglas específicas de prioridad para decidir cuál gana.",
+      "La primera propuesta de CSS fue en 1994 por Hakon Wium Lie.",
+      "Existen colores con nombres muy curiosos en CSS, como 'papayawhip', 'tomato' y 'rebeccapurple'."
+    ],
+    "youtubeId": "1Rs2ND1ryYc",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/CSS",
-    "audio": "css.mp3"
+    "audio": "css.mp3",
+    "resources": [
+      {
+        "title": "Aprende Flexbox jugando",
+        "type": "Juego Interactivo",
+        "url": "https://flexboxfroggy.com/#es"
+      },
+      {
+        "title": "Curso de CSS3 desde cero",
+        "type": "Lista de reproducción",
+        "url": "https://www.youtube.com/watch?v=OWKXEJN67FE"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "JavaScript",
     "category": "Frontend",
     "description": "Un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (JIT) con funciones de primera clase. Aporta interactividad y lógica a la web.",
+    "detailedDescription": "JavaScript (JS) es el único lenguaje de programación que los navegadores web pueden entender nativamente. Es lo que convierte a la web de una serie de documentos estáticos (HTML/CSS) a aplicaciones dinámicas e interactivas.",
+    "purpose": "Añadir comportamiento y lógica a las páginas web. Sirve para validar formularios, crear animaciones complejas, cargar datos asíncronamente (AJAX/Fetch) sin recargar la página, y hasta crear juegos web.",
+    "features": [
+      "Lenguaje interpretado de alto nivel.",
+      "Tipado dinámico y débil.",
+      "Orientado a objetos (basado en prototipos).",
+      "Asincronismo nativo usando Promesas y async/await."
+    ],
+    "advantages": [
+      "Se ejecuta en el lado del cliente, ahorrando carga al servidor.",
+      "Ecosistema gigante (NPM) con miles de librerías y frameworks.",
+      "Versátil: se usa en frontend, backend (Node.js), móvil y escritorio.",
+      "Actualizaciones constantes del estándar ECMAScript."
+    ],
+    "codeExample": "// Función para saludar al usuario\nfunction saludar(nombre) {\n  return `¡Hola, ${nombre}! Bienvenido a Techpedia.`;\n}\n\n// Event listener para un botón\ndocument.querySelector('#btn-saludo').addEventListener('click', () => {\n  const mensaje = saludar('Estudiante');\n  console.log(mensaje);\n});",
+    "curiosities": [
+      "Fue creado en solo 10 días por Brendan Eich en 1995.",
+      "A pesar de su nombre, JavaScript NO tiene relación con Java (fue una estrategia de marketing).",
+      "Originalmente se llamaba Mocha, luego LiveScript, antes de ser nombrado JavaScript."
+    ],
+    "youtubeId": "z95mZVUcJ-E",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/JavaScript",
-    "audio": "JavaScript.mp3"
+    "audio": "JavaScript.mp3",
+    "resources": [
+      {
+        "title": "JavaScript Tutorial Moderno",
+        "type": "Tutorial completo",
+        "url": "https://es.javascript.info/"
+      },
+      {
+        "title": "Curso de JavaScript para Principiantes",
+        "type": "Video de YouTube",
+        "url": "https://www.youtube.com/watch?v=z95mZVUcJ-E"
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Vue.js",
     "category": "Frontend",
     "description": "Un framework de JavaScript progresivo para construir interfaces de usuario. Se basa en componentes y un modelo reactivo muy eficiente.",
+    "detailedDescription": "Vue (pronunciado como 'view') es un framework de JavaScript de código abierto para la construcción de interfaces de usuario y aplicaciones de una sola página (SPAs). Es conocido por ser 'progresivo', lo que significa que puedes integrarlo gradualmente en tus proyectos.",
+    "purpose": "Facilitar la creación de interfaces de usuario dinámicas y complejas. Ayuda a organizar el código en componentes reutilizables y maneja eficientemente las actualizaciones del DOM cuando los datos cambian (reactividad).",
+    "features": [
+      "Arquitectura basada en componentes (.vue).",
+      "Virtual DOM para un rendimiento optimizado.",
+      "Sistema de reactividad profunda e intuitiva.",
+      "Soporte oficial y excelente documentación."
+    ],
+    "advantages": [
+      "Curva de aprendizaje más amigable que React o Angular.",
+      "Muy ligero y rápido en producción.",
+      "Ecosistema integrado (Vue Router, Pinia) mantenido por la misma comunidad.",
+      "Sintaxis limpia y declarativa."
+    ],
+    "codeExample": "<template>\n  <div>\n    <p>Contador: {{ count }}</p>\n    <button @click=\"incrementar\">Sumar 1</button>\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst count = ref(0);\nconst incrementar = () => count.value++;\n</script>",
+    "curiosities": [
+      "Fue creado por Evan You en 2014, después de trabajar en Google con AngularJS.",
+      "Vue no está respaldado por un gigante tecnológico (como Meta con React o Google con Angular), es mantenido por la comunidad.",
+      "Es el framework frontend más popular en Asia y está creciendo rápidamente a nivel global."
+    ],
+    "youtubeId": "FXpIoQ_rT_c",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://vuejs.org/"
@@ -43,6 +163,25 @@
     "name": "JSON",
     "category": "Herramientas",
     "description": "JavaScript Object Notation (JSON) es un formato de texto ligero para el intercambio de datos. Muy fácil de leer y escribir para los humanos y para las máquinas.",
+    "detailedDescription": "JSON es un formato de datos independiente del lenguaje que utiliza texto plano para representar datos estructurados basados en la sintaxis de objetos de JavaScript. Se ha convertido en el estándar de facto para el intercambio de datos en la web.",
+    "purpose": "Transmitir datos entre un servidor y una aplicación web, o almacenar configuraciones. Reemplazó en gran medida a XML debido a que es más limpio, fácil de leer y requiere menos caracteres.",
+    "features": [
+      "Basado en texto plano, lo que lo hace ligero.",
+      "Estructura basada en pares clave-valor (objetos) y listas ordenadas (arrays).",
+      "Soportado de forma nativa por la mayoría de lenguajes de programación modernos."
+    ],
+    "advantages": [
+      "Extremadamente rápido de parsear por los navegadores web.",
+      "Fácilmente legible tanto para humanos como para máquinas.",
+      "Independiente del lenguaje; puedes usar JSON con Python, Java, C#, PHP, etc."
+    ],
+    "codeExample": "{\n  \"usuario\": {\n    \"id\": 102,\n    \"nombre\": \"Ana\",\n    \"rol\": \"Estudiante\",\n    \"habilidades\": [\"HTML\", \"CSS\", \"JavaScript\"],\n    \"activo\": true\n  }\n}",
+    "curiosities": [
+      "Douglas Crockford especificó originalmente el formato JSON a principios de los 2000.",
+      "Las claves en JSON deben estar siempre entre comillas dobles, a diferencia de los objetos de JavaScript.",
+      "JSON no soporta comentarios nativamente."
+    ],
+    "youtubeId": "iiADhChRriM",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
     "difficulty": "Básico",
     "officialUrl": "https://www.json.org/json-es.html"
@@ -52,6 +191,27 @@
     "name": "Git",
     "category": "Herramientas",
     "description": "Un sistema de control de versiones distribuido, gratuito y de código abierto. Diseñado para manejar todo, desde proyectos pequeños hasta muy grandes.",
+    "detailedDescription": "Git es un sistema que registra los cambios realizados en archivos a lo largo del tiempo, de modo que puedes recordar versiones específicas más adelante. A diferencia de los sistemas antiguos, Git almacena la información como una serie de instantáneas (snapshots) de tu sistema de archivos.",
+    "purpose": "Permitir a múltiples desarrolladores trabajar en un mismo proyecto de forma simultánea sin sobreescribir el trabajo de los demás. Ayuda a mantener un historial completo de cambios y facilita el volver a versiones anteriores si algo se rompe.",
+    "features": [
+      "Arquitectura distribuida: cada desarrollador tiene una copia completa del repositorio.",
+      "Manejo avanzado de ramas (branching) para trabajar en características aisladas.",
+      "Altamente rápido y eficiente, diseñado para proyectos como el Kernel de Linux.",
+      "Operaciones locales en su mayoría, lo que no requiere conexión a internet para trabajar."
+    ],
+    "advantages": [
+      "Trabajo en equipo sin fricciones.",
+      "Seguridad criptográfica (SHA-1) que garantiza la integridad de la historia.",
+      "Facilita la experimentación, puedes crear una rama, probar una idea y borrarla si no funciona.",
+      "Estándar de la industria: es un requisito fundamental para casi cualquier trabajo de desarrollo."
+    ],
+    "codeExample": "# Inicializar un repositorio local\ngit init\n\n# Añadir cambios al área de preparación (staging)\ngit add index.html\n\n# Guardar una versión (commit) con un mensaje descriptivo\ngit commit -m \"Añadir estructura básica del index.html\"\n\n# Enviar cambios a un repositorio remoto (como GitHub)\ngit push origin main",
+    "curiosities": [
+      "Fue creado por Linus Torvalds, el mismo creador del sistema operativo Linux.",
+      "Linus Torvalds creó Git en solo unas pocas semanas en 2005 porque estaba insatisfecho con las alternativas existentes.",
+      "El nombre 'Git' es una jerga británica para referirse a una persona obstinada o tonta. Linus dijo en broma: 'Nombro a todos mis proyectos como yo'."
+    ],
+    "youtubeId": "VdGzPZ31ts8",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://git-scm.com/"
@@ -61,6 +221,26 @@
     "name": "GitHub",
     "category": "Herramientas",
     "description": "Una plataforma de alojamiento para el desarrollo de software y control de versiones usando Git. Ofrece control de acceso y funciones de colaboración.",
+    "detailedDescription": "GitHub es un servicio en la nube que permite alojar repositorios de Git de forma remota. Además de las funciones base de Git, GitHub añade una interfaz web, herramientas de colaboración y características de redes sociales para desarrolladores.",
+    "purpose": "Servir como el punto central donde los equipos comparten su código, realizan revisiones de código (Code Reviews), reportan bugs y automatizan sus flujos de trabajo (CI/CD) mediante GitHub Actions.",
+    "features": [
+      "Alojamiento gratuito para proyectos de código abierto y privados.",
+      "Pull Requests para discutir y revisar cambios antes de integrarlos.",
+      "GitHub Issues para seguimiento de errores y tareas.",
+      "GitHub Actions para automatizar tareas (como pruebas y despliegues)."
+    ],
+    "advantages": [
+      "Es el 'currículum' moderno del desarrollador, mostrando su actividad y contribuciones.",
+      "Fomenta el código abierto, facilitando la colaboración global.",
+      "Integración excelente con infinidad de herramientas de terceros y servicios Cloud."
+    ],
+    "codeExample": "# Ejemplo de flujo de trabajo típico al usar GitHub:\n\n1. Clonas un repositorio de GitHub\ngit clone https://github.com/usuario/proyecto.git\n\n2. Haces un cambio y subes tu rama\ngit checkout -b mi-nueva-feature\ngit add .\ngit commit -m \"Añadida nueva funcionalidad\"\ngit push origin mi-nueva-feature\n\n3. Creas un Pull Request en GitHub.com",
+    "curiosities": [
+      "Microsoft compró GitHub en 2018 por 7.500 millones de dólares.",
+      "El repositorio más grande del mundo se aloja en GitHub, con millones de archivos.",
+      "La mascota de GitHub es 'Octocat', un gato con tentáculos de pulpo."
+    ],
+    "youtubeId": "RGOj5yH7evk",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://github.com/"
@@ -70,26 +250,88 @@
     "name": "SQL",
     "category": "Bases de Datos",
     "description": "Structured Query Language (SQL) es un lenguaje estándar para almacenar, manipular y recuperar datos en bases de datos relacionales.",
+    "detailedDescription": "SQL es el lenguaje específico de dominio utilizado en programación y diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales (RDBMS). Utiliza un sistema tabular basado en filas y columnas.",
+    "purpose": "Permite comunicarse con bases de datos como MySQL, PostgreSQL, o SQL Server. Sirve para insertar, buscar, actualizar y eliminar registros de manera estructurada y altamente confiable.",
+    "features": [
+      "Lenguaje declarativo: dices qué quieres, no cómo el motor debe buscarlo.",
+      "Estándar internacional, aunque cada motor tiene su propio 'dialecto'.",
+      "Capacidad para cruzar tablas (JOINs) y obtener datos complejos.",
+      "Garantiza propiedades ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad)."
+    ],
+    "advantages": [
+      "Altamente maduro y optimizado para grandes volúmenenes de datos estructurados.",
+      "Universalidad: si sabes SQL, puedes usar casi cualquier base de datos relacional.",
+      "Potente para análisis de datos y generación de reportes."
+    ],
+    "codeExample": "-- Ejemplo: Obtener el nombre y correo de los usuarios activos\nSELECT nombre, correo_electronico \nFROM usuarios \nWHERE estado = 'activo' \nORDER BY fecha_registro DESC\nLIMIT 10;",
+    "curiosities": [
+      "Fue desarrollado por IBM en la década de 1970.",
+      "Originalmente se llamaba SEQUEL (Structured English Query Language), pero fue cambiado por problemas de marca registrada.",
+      "Aunque el mundo NoSQL ganó popularidad reciente, SQL sigue siendo la herramienta dominante en bases de datos a nivel empresarial."
+    ],
+    "youtubeId": "HXV3zeQKqGY",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://es.wikipedia.org/wiki/SQL"
   },
   {
     "id": 9,
-    "name": "APIs REST",
+    "name": "Node.js",
     "category": "Backend",
-    "description": "Transferencia de Estado Representacional (REST). Es una arquitectura de software que define un conjunto de restricciones a ser usadas para crear servicios web.",
+    "description": "Un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Permite ejecutar JS en el servidor.",
+    "detailedDescription": "Node.js no es un framework, sino un entorno de ejecución. Tomó el motor que Google Chrome usa para ejecutar JavaScript (V8) y lo sacó del navegador, dándole a JavaScript la capacidad de acceder al sistema operativo, leer archivos y manejar peticiones de red.",
+    "purpose": "Permite a los desarrolladores usar JavaScript para escribir herramientas de línea de comandos y para el scripting del lado del servidor (backend). Esto significa que puedes usar un solo lenguaje de programación para todo tu proyecto web.",
+    "features": [
+      "Modelo asíncrono y dirigido por eventos.",
+      "Basado en un solo hilo de ejecución (Single-threaded) pero altamente concurrente.",
+      "Incluye NPM (Node Package Manager), el ecosistema de librerías más grande del mundo.",
+      "Excelente para aplicaciones en tiempo real como chats."
+    ],
+    "advantages": [
+      "JavaScript en todas partes (Full-Stack JS).",
+      "Alta velocidad de ejecución gracias al motor V8.",
+      "Enorme ecosistema y comunidad activa.",
+      "Perfecto para construir APIs REST o GraphQL."
+    ],
+    "codeExample": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('¡Hola Servidor Node.js!\\n');\n});\n\nserver.listen(3000, () => {\n  console.log('Servidor corriendo en http://localhost:3000/');\n});",
+    "curiosities": [
+      "Fue creado por Ryan Dahl en 2009.",
+      "Ryan Dahl después creó Deno, como un intento de solucionar los 'errores de diseño' que él consideraba que tenía Node.js.",
+      "Empresas masivas como Netflix, Uber y PayPal usan Node.js para sus arquitecturas de microservicios."
+    ],
+    "youtubeId": "yB4n_K7dZV8",
     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "difficulty": "Avanzado",
-    "officialUrl": "https://aws.amazon.com/es/what-is/restful-api/"
+    "officialUrl": "https://nodejs.org/es/"
   },
   {
     "id": 10,
-    "name": "Seguridad Web",
-    "category": "Seguridad",
-    "description": "Prácticas y tecnologías para proteger aplicaciones web de ataques cibernéticos. Incluye cifrado, protección contra inyecciones SQL y XSS.",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-    "difficulty": "Avanzado",
-    "officialUrl": "https://developer.mozilla.org/es/docs/Web/Security"
+    "name": "TypeScript",
+    "category": "Frontend",
+    "description": "Un superconjunto de JavaScript que añade tipado estático opcional, facilitando la detección de errores en etapas tempranas.",
+    "detailedDescription": "TypeScript (TS) es un lenguaje de programación de código abierto desarrollado por Microsoft. Se basa en JavaScript agregándole sintaxis para declaraciones de tipo. Eventualmente, el código TypeScript se 'transpila' (convierte) a JavaScript estándar para que los navegadores puedan ejecutarlo.",
+    "purpose": "Hacer que el desarrollo a gran escala en JavaScript sea más manejable y seguro. Los tipos ayudan a los editores de código (como VS Code) a proporcionar mejor autocompletado y a detectar errores antes de que el código se ejecute.",
+    "features": [
+      "Tipado estático (Tipos de datos definidos estrictamente).",
+      "Soporta características avanzadas como Interfaces, Enums y Generics.",
+      "Compatible al 100% con código JavaScript existente.",
+      "Excelente integración con IDEs (Especialmente Visual Studio Code)."
+    ],
+    "advantages": [
+      "Detección temprana de errores en tiempo de escritura (compile-time).",
+      "Código mucho más auto-documentado y mantenible.",
+      "Facilita refactorizaciones grandes de código de manera segura.",
+      "Adoptado como estándar por frameworks modernos como Angular o NestJS."
+    ],
+    "codeExample": "// Definimos una Interfaz que describe un objeto Usuario\ninterface Usuario {\n  id: number;\n  nombre: string;\n  esEstudiante: boolean;\n}\n\n// Una función que recibe y retorna tipos específicos\nfunction registrarUsuario(user: Usuario): string {\n  if (user.esEstudiante) {\n    return `Estudiante ${user.nombre} registrado con ID: ${user.id}`;\n  }\n  return `Usuario externo ${user.nombre} registrado.`;\n}\n\n// El compilador advertiría si intentamos pasar un string en vez de un number al 'id'",
+    "curiosities": [
+      "Fue creado por Anders Hejlsberg en Microsoft, el mismo creador de C# y Turbo Pascal.",
+      "Para que el navegador pueda entender TypeScript, siempre tiene que ser transformado a JavaScript primero mediante un compilador.",
+      "Gran parte de los paquetes populares en NPM ahora incluyen archivos '.d.ts' que proporcionan definiciones de tipos para TypeScript."
+    ],
+    "youtubeId": "ZpY5KdGQvwI",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "difficulty": "Intermedio",
+    "officialUrl": "https://www.typescriptlang.org/"
   }
 ]
