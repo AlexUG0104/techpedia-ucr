@@ -67,12 +67,19 @@ Si clonas este repositorio, sigue estos pasos para ejecutar la aplicación local
 
 ## 🔗 Enlaces
 
-- **Repositorio en GitHub**: Reemplazar con la URL real de tu repositorio cuando esté disponible.
-- **Sitio en vivo (GitHub Pages)**: Aún no desplegado.
+- **Repositorio en GitHub**: https://github.com/AlexUG0104/techpedia-ucr.git
+- **Sitio en vivo (GitHub Pages)**: https://alexug0104.github.io/techpedia-ucr/
 
-## 🌐 Cómo publicar en GitHub Pages
+## 🌐 Despliegue en GitHub Pages
 
-Este proyecto aún no está configurado para despliegue en GitHub Pages. Cuando quieras publicar, puedes seguir estos pasos:
-1. En `vite.config.js`, agregar: `base: '/techpedia-ucr/'`.
-2. Subir los cambios a GitHub.
-3. Configurar GitHub Actions para construir el proyecto o subir la carpeta `dist` manualmente a la rama `gh-pages`.
+El proyecto ya está preparado para GitHub Pages con `vite.config.js` configurado en:
+
+```js
+base: '/techpedia-ucr/'
+```
+
+Pasos básicos para actualizar el sitio:
+1. Ejecuta `npm run build`.
+2. Publica la carpeta `dist` en GitHub Pages, por ejemplo con `npx gh-pages -d dist`.
+3. Verifica el sitio en: https://alexug0104.github.io/techpedia-ucr/
+
