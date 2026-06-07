@@ -1,85 +1,97 @@
-# Techpedia UCR 📚
+## Techpedia UCR 📚
 
-Una **Enciclopedia Temática Interactiva** sobre tecnologías esenciales para estudiantes de Informática. 
+Una enciclopedia temática interactiva sobre tecnologías esenciales para estudiantes de Informática.
 
-Este proyecto fue desarrollado para el curso **IF7102 - Multimedios** de la Universidad de Costa Rica, cumpliendo con los requerimientos de la **Opción 4: Enciclopedia Temática Interactiva**.
+Este proyecto se desarrolló para el curso IF7102 - Multimedios de la Universidad de Costa Rica.
 
-## 🚀 Tecnologías y Framework Utilizado
+## Tecnologías
 
-El proyecto está construido utilizando herramientas modernas de desarrollo web:
-- **Vue 3** (Composition API con `<script setup>`)
-- **Vite** (como herramienta de compilación ultrarrápida)
-- **Vanilla CSS** (con variables para modo oscuro/claro y diseño responsive)
-- **HTML5 & JavaScript**
-- **JSON** para la carga dinámica de datos (mediante la API `fetch()`)
+- Vue 3 (Composition API / `<script setup>`)
+- Vite
+- HTML5, JavaScript
+- CSS (archivos modulares en `src/css/` y `src/style.css`)
+- JSON para los datos (en `public/data/technologies.json`)
 
-## ✨ Funcionalidades
+## Funcionalidades principales
 
-- ✅ **Buscador en tiempo real:** Filtra tecnologías mientras escribes.
-- ✅ **Filtro por categoría:** Permite visualizar por Frontend, Backend, Herramientas, etc.
-- ✅ **Modo Oscuro/Claro:** Interfaz amigable para la vista en diferentes entornos.
-- ✅ **Soporte Multimedia:** Integración de audios descriptivos y uso de iconos externos para representar tecnologías.
-- ✅ **Diseño Responsivo:** Adaptable a dispositivos móviles, tablets y pantallas de escritorio.
-- ✅ **Tarjetas Dinámicas:** Tarjetas interactivas con *badges* de dificultad y enlaces a la documentación oficial.
+- Buscador en tiempo real
+- Filtro por categoría
+- Modo oscuro/claro
+- Reproducción de audios descriptivos
+- Diseño responsivo
+- Tarjetas dinámicas con detalles en modal
 
-## 📂 Estructura del Proyecto
+## Estructura del proyecto
 
 ```text
-src/
-├── components/
-│   ├── Header.vue         # Cabecera con título y botón de tema
-│   ├── SearchFilter.vue   # Componente de búsqueda y filtro
-│   ├── TechCard.vue       # Tarjeta individual por tecnología
-│   ├── AudioButton.vue    # Botón reproductor de audio descriptivo
-│   ├── ThemeToggle.vue    # Interruptor de modo oscuro/claro
-│   └── Footer.vue         # Pie de página
-├── App.vue                # Componente raíz que maneja el estado y fetch
-├── main.js                # Punto de entrada de Vue
-└── style.css              # Estilos globales y paleta de la UCR
-
-public/
-├── data/
-│   └── technologies.json  # Base de datos en JSON con mínimo 10 entradas
-├── audio/                 # Archivos de audio descriptivo (.mp3)
-├── favicon.svg           # Ícono del sitio
-└── icons.svg             # SVG de iconos adicionales
+.
+├── index.html
+├── package.json
+├── README.md
+├── REFERENCIAS.md
+├── vite.config.js
+├── public/
+│   ├── audio/                 # archivos de audio (.mp3)
+│   └── data/
+│       └── technologies.json  # datos de las tecnologías
+└── src/
+    ├── App.vue
+    ├── main.js
+    ├── style.css
+    ├── assets/                # imágenes y recursos estáticos
+    ├── components/
+    │   ├── AudioButton.vue
+    │   ├── Footer.vue
+    │   ├── Header.vue
+    │   ├── HeroPanel.vue
+    │   ├── SearchFilter.vue
+    │   ├── TechCard.vue
+    │   ├── TechModal.vue
+    │   └── ThemeToggle.vue
+    └── css/
+        ├── audio-button.css
+        ├── base.css
+        ├── footer.css
+        ├── header.css
+        ├── hero-panel.css
+        ├── index.css
+        ├── layout.css
+        ├── search-filter.css
+        ├── tech-card.css
+        ├── tech-modal.css
+        └── theme-toggle.css
 ```
 
-## 📦 Instrucciones de Instalación y Uso
+## Ejecutar localmente
 
-Si clonas este repositorio, sigue estos pasos para ejecutar la aplicación localmente:
+1. Instalar dependencias:
 
-1. **Instalar dependencias**:
-   ```bash
-   npm install
-   ```
-
-2. **Ejecutar el servidor de desarrollo**:
-   ```bash
-   npm run dev
-   ```
-
-3. Abre tu navegador en la URL que indique la consola (usualmente `http://localhost:5173`).
-
-## 🖼️ Capturas de Pantalla
-
-*(Nota: Agrega aquí las capturas de pantalla de la aplicación terminada)*
-
-## 🔗 Enlaces
-
-- **Repositorio en GitHub**: https://github.com/AlexUG0104/techpedia-ucr.git
-- **Sitio en vivo (GitHub Pages)**: https://alexug0104.github.io/techpedia-ucr/
-
-## 🌐 Despliegue en GitHub Pages
-
-El proyecto ya está preparado para GitHub Pages con `vite.config.js` configurado en:
-
-```js
-base: '/techpedia-ucr/'
+```bash
+npm install
 ```
 
-Pasos básicos para actualizar el sitio:
-1. Ejecuta `npm run build`.
-2. Publica la carpeta `dist` en GitHub Pages, por ejemplo con `npx gh-pages -d dist`.
-3. Verifica el sitio en: https://alexug0104.github.io/techpedia-ucr/
+2. Levantar servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Abre el navegador en la URL que muestre la consola (por ejemplo `http://localhost:5173`).
+
+## Despliegue (GitHub Pages)
+
+Si usas GitHub Pages con Vite, asegúrate de que `vite.config.js` tenga la opción `base` correcta. Comandos comunes:
+
+```bash
+npm run build
+npx gh-pages -d dist
+```
+
+## Notas
+
+- Los datos de las tecnologías están en `public/data/technologies.json`.
+- Los audios descriptivos se guardan en `public/audio/`.
+- Los estilos están organizados en `src/css/` y `src/style.css`.
+
+Si quieres, ajusto el README para agregar capturas o instrucciones de despliegue más detalladas.
 
