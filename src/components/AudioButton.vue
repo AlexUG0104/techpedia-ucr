@@ -51,36 +51,3 @@ onUnmounted(() => {
   }
 });
 </script>
-
-<style scoped>
-.audio-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.audio-btn:hover {
-  background-color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-.audio-btn.playing {
-  background-color: var(--accent-color);
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(234, 179, 8, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
-}
-</style>
