@@ -3,6 +3,29 @@
     <Header :isDark="darkMode" @toggleTheme="toggleTheme" />
 
     <main class="main-content">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Explora y aprende</p>
+          <h2>Techpedia UCR: enciclopedia temática interactiva</h2>
+          <p>Descubre tecnologías clave para desarrollo web y herramientas de programación con fichas breves, audios descriptivos y recursos prácticos. Filtra por categoría o busca directamente para encontrar lo que necesitas.</p>
+        </div>
+
+        <div class="hero-stats">
+          <article class="stat-card">
+            <span class="stat-value">{{ totalTechnologies }}</span>
+            <p class="stat-label">Tecnologías</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">{{ categoryCount }}</span>
+            <p class="stat-label">Categorías</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">{{ audioCount }}</span>
+            <p class="stat-label">Audios disponibles</p>
+          </article>
+        </div>
+      </section>
+
       <SearchFilter 
         v-model:searchTerm="searchTerm"
         v-model:selectedCategory="selectedCategory"
@@ -111,6 +134,10 @@ const filteredTechnologies = computed(() => {
     return matchesSearch && matchesCategory;
   });
 });
+
+const totalTechnologies = computed(() => technologies.value.length);
+const categoryCount = computed(() => availableCategories.value.length);
+const audioCount = computed(() => technologies.value.filter(t => t.audio).length);
 </script>
 
 <style scoped>
@@ -160,5 +187,81 @@ const filteredTechnologies = computed(() => {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 1.5rem;
+  background: linear-gradient(180deg, rgba(59,130,246,0.12), rgba(255,255,255,0.9));
+  border: 1px solid rgba(59,130,246,0.15);
+  box-shadow: 0 20px 40px rgba(15,23,42,0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  margin: 2rem 0 1rem;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  line-height: 1.05;
+  max-width: 680px;
+}
+
+.hero-copy p {
+  margin: 0;
+  max-width: 700px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.hero-stats {
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 15px 30px rgba(15,23,42,0.05);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.stat-label {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
