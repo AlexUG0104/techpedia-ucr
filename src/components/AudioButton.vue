@@ -36,7 +36,7 @@ const toggleAudio = () => {
 
 onMounted(() => {
   if (props.audioSrc) {
-    audio = new Audio(`/audio/${props.audioSrc}`);
+    audio = new Audio(`${import.meta.env.BASE_URL}audio/${props.audioSrc}`);
     audio.addEventListener('ended', () => {
       isPlaying.value = false;
     });
