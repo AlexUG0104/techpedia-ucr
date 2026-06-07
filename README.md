@@ -18,7 +18,7 @@ El proyecto está construido utilizando herramientas modernas de desarrollo web:
 - ✅ **Buscador en tiempo real:** Filtra tecnologías mientras escribes.
 - ✅ **Filtro por categoría:** Permite visualizar por Frontend, Backend, Herramientas, etc.
 - ✅ **Modo Oscuro/Claro:** Interfaz amigable para la vista en diferentes entornos.
-- ✅ **Soporte Multimedia:** Integración de imágenes representativas y audios descriptivos para al menos 3 entradas.
+- ✅ **Soporte Multimedia:** Integración de audios descriptivos y uso de iconos externos para representar tecnologías.
 - ✅ **Diseño Responsivo:** Adaptable a dispositivos móviles, tablets y pantallas de escritorio.
 - ✅ **Tarjetas Dinámicas:** Tarjetas interactivas con *badges* de dificultad y enlaces a la documentación oficial.
 
@@ -41,7 +41,8 @@ public/
 ├── data/
 │   └── technologies.json  # Base de datos en JSON con mínimo 10 entradas
 ├── audio/                 # Archivos de audio descriptivo (.mp3)
-└── images/                # Recursos gráficos e íconos locales
+├── favicon.svg           # Ícono del sitio
+└── icons.svg             # SVG de iconos adicionales
 ```
 
 ## 📦 Instrucciones de Instalación y Uso
@@ -66,12 +67,12 @@ Si clonas este repositorio, sigue estos pasos para ejecutar la aplicación local
 
 ## 🔗 Enlaces
 
-- **Repositorio en GitHub**: [https://github.com/TU-USUARIO/techpedia-ucr](https://github.com/TU-USUARIO/techpedia-ucr)
-- **Sitio en vivo (GitHub Pages)**: [https://TU-USUARIO.github.io/techpedia-ucr/](https://TU-USUARIO.github.io/techpedia-ucr/) *(Se agregará una vez desplegado)*
+- **Repositorio en GitHub**: Reemplazar con la URL real de tu repositorio cuando esté disponible.
+- **Sitio en vivo (GitHub Pages)**: Aún no desplegado.
 
 ## 🌐 Cómo publicar en GitHub Pages
 
-Al final del proyecto, para publicar en GitHub Pages se configurará lo siguiente:
+Este proyecto aún no está configurado para despliegue en GitHub Pages. Cuando quieras publicar, puedes seguir estos pasos:
 1. En `vite.config.js`, agregar: `base: '/techpedia-ucr/'`.
 2. Subir los cambios a GitHub.
 3. Configurar GitHub Actions para construir el proyecto o subir la carpeta `dist` manualmente a la rama `gh-pages`.
