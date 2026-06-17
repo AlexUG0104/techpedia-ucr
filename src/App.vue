@@ -77,18 +77,32 @@ const closeModal = () => {
   selectedTech.value = null;
 };
 
-// Alternar tema y aplicarlo al body
+// Alternar tema y aplicarlo al body con persistencia en localStorage
 const toggleTheme = () => {
   darkMode.value = !darkMode.value;
   if (darkMode.value) {
     document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
   } else {
     document.body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
   }
 };
 
-// Cargar datos al montar el componente
+// Cargar datos al montar el componente e inicializar tema
 onMounted(async () => {
+  // Inicializar tema recuperado o preferencia del sistema
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    darkMode.value = true;
+    document.body.classList.add('dark-mode');
+  } else {
+    darkMode.value = false;
+    document.body.classList.remove('dark-mode');
+  }
+
   try {
     const response = await fetch(`${import.meta.env.BASE_URL}data/technologies.json`);
     if (!response.ok) {

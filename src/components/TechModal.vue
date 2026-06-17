@@ -131,16 +131,24 @@ const props = defineProps({
   }
 });
 
-defineEmits(['close']);
+const emit = defineEmits(['close']);
 
 const activeTab = ref('info');
 
-// Prevenir el scroll del body cuando el modal está abierto
+const handleKeyDown = (e) => {
+  if (e.key === 'Escape') {
+    emit('close');
+  }
+};
+
+// Prevenir el scroll del body y escuchar la tecla Escape cuando el modal está abierto
 onMounted(() => {
   document.body.style.overflow = 'hidden';
+  window.addEventListener('keydown', handleKeyDown);
 });
 
 onUnmounted(() => {
   document.body.style.overflow = '';
+  window.removeEventListener('keydown', handleKeyDown);
 });
 </script>
