@@ -25,7 +25,7 @@
       "Antes de HTML5, se necesitaban plugins como Flash para reproducir video y audio."
     ],
     "youtubeId": "rbuYtrNUxg4",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "image": "img/tech/html5.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/HTML",
     "audio": "html.mp3",
@@ -68,7 +68,7 @@
       "Existen colores con nombres muy curiosos en CSS, como 'papayawhip', 'tomato' y 'rebeccapurple'."
     ],
     "youtubeId": "1Rs2ND1ryYc",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "image": "img/tech/css3.svg",
     "difficulty": "Básico",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/CSS",
     "audio": "css.mp3",
@@ -111,7 +111,7 @@
       "Originalmente se llamaba Mocha, luego LiveScript, antes de ser nombrado JavaScript."
     ],
     "youtubeId": "z95mZVUcJ-E",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "image": "img/tech/javascript.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://developer.mozilla.org/es/docs/Web/JavaScript",
     "audio": "JavaScript.mp3",
@@ -154,7 +154,7 @@
       "Es el framework frontend más popular en Asia y está creciendo rápidamente a nivel global."
     ],
     "youtubeId": "FXpIoQ_rT_c",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "image": "img/tech/vuejs.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://vuejs.org/"
   },
@@ -182,7 +182,7 @@
       "JSON no soporta comentarios nativamente."
     ],
     "youtubeId": "iiADhChRriM",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
+    "image": "img/tech/json.svg",
     "difficulty": "Básico",
     "officialUrl": "https://www.json.org/json-es.html"
   },
@@ -212,7 +212,7 @@
       "El nombre 'Git' es una jerga británica para referirse a una persona obstinada o tonta. Linus dijo en broma: 'Nombro a todos mis proyectos como yo'."
     ],
     "youtubeId": "VdGzPZ31ts8",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "image": "img/tech/git.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://git-scm.com/"
   },
@@ -241,7 +241,7 @@
       "La mascota de GitHub es 'Octocat', un gato con tentáculos de pulpo."
     ],
     "youtubeId": "RGOj5yH7evk",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    "image": "img/tech/github.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://github.com/"
   },
@@ -270,7 +270,7 @@
       "Aunque el mundo NoSQL ganó popularidad reciente, SQL sigue siendo la herramienta dominante en bases de datos a nivel empresarial."
     ],
     "youtubeId": "HXV3zeQKqGY",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg",
+    "image": "img/tech/sqldeveloper.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://es.wikipedia.org/wiki/SQL"
   },
@@ -300,7 +300,7 @@
       "Empresas masivas como Netflix, Uber y PayPal usan Node.js para sus arquitecturas de microservicios."
     ],
     "youtubeId": "yB4n_K7dZV8",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "image": "img/tech/nodejs.svg",
     "difficulty": "Avanzado",
     "officialUrl": "https://nodejs.org/es/"
   },
@@ -330,7 +330,7 @@
       "Gran parte de los paquetes populares en NPM ahora incluyen archivos '.d.ts' que proporcionan definiciones de tipos para TypeScript."
     ],
     "youtubeId": "ZpY5KdGQvwI",
-    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "image": "img/tech/typescript.svg",
     "difficulty": "Intermedio",
     "officialUrl": "https://www.typescriptlang.org/"
   }

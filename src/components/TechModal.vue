@@ -6,7 +6,7 @@
       <div class="modal-content" v-if="tech">
         <!-- Header -->
         <div class="modal-header">
-          <img :src="tech.image" :alt="tech.name" class="modal-tech-image" />
+          <img :src="`${baseUrl}${tech.image}`" :alt="tech.name" class="modal-tech-image" />
           <div class="modal-title-group">
             <h2>{{ tech.name }}</h2>
             <div class="modal-badges">
@@ -121,6 +121,8 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+
+const baseUrl = import.meta.env.BASE_URL;
 
 const props = defineProps({
   tech: {

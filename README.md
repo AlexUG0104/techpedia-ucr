@@ -80,18 +80,34 @@ Abre el navegador en la URL que muestre la consola (por ejemplo `http://localhos
 
 ## Despliegue (GitHub Pages)
 
-Si usas GitHub Pages con Vite, asegúrate de que `vite.config.js` tenga la opción `base` correcta. Comandos comunes:
+Si utilizas GitHub Pages para alojar el proyecto mediante Vite, asegúrate de que `vite.config.js` tenga definida la opción `base` correspondiente al nombre de tu repositorio (`base: '/techpedia-ucr/'`).
+
+Comandos para compilar y desplegar:
 
 ```bash
+# Compilar el proyecto para producción
 npm run build
+
+# Desplegar la carpeta dist a la rama gh-pages
 npx gh-pages -d dist
 ```
 
-## Notas
+## Capturas de pantalla
 
-- Los datos de las tecnologías están en `public/data/technologies.json`.
-- Los audios descriptivos se guardan en `public/audio/`.
-- Los estilos están organizados en `src/css/` y `src/style.css`.
+A continuación se muestran capturas representativas de la interfaz de la enciclopedia:
 
-Si quieres, ajusto el README para agregar capturas o instrucciones de despliegue más detalladas.
+### 1. Vista Principal (Header con Logo UCR y Modo Claro)
+![Vista Principal en Escritorio](./public/img/Cap/Principal.png)
+
+### 2. Detalle de Tecnología en Modal (Soporte de Tema Oscuro)
+![Modal de Detalles](./public/img/Cap/Modal.png)
+
+
+## Notas del Proyecto
+
+- Los datos de las tecnologías están estructurados en `public/data/technologies.json`.
+- Los audios descriptivos en formato MP3 están alojados localmente en `public/audio/`.
+- Las imágenes vectoriales (SVG) de los logotipos de tecnologías se alojan localmente en `public/img/tech/`.
+- El logotipo oficial de la cabecera y el favicon se sirven desde `public/img/logoArriba.png`.
+- La modularización de estilos CSS se ubica en `src/css/` y es enlazada a través de `src/style.css`.
 

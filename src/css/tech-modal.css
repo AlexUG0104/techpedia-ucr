@@ -327,3 +327,93 @@ body.dark-mode .scrollable::-webkit-scrollbar-track {
 .scrollable::-webkit-scrollbar-thumb:hover {
   background: rgba(128, 128, 128, 0.6);
 }
+
+/* Modo oscuro para el Modal */
+body.dark-mode .modal-container {
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .modal-header {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.22), rgba(16, 185, 129, 0.16));
+  border-bottom-color: rgba(59, 130, 246, 0.25);
+}
+
+body.dark-mode .modal-title-group h2 {
+  color: #f8fafc;
+}
+
+body.dark-mode .modal-tabs {
+  background: #1e293b;
+  border-bottom-color: rgba(59, 130, 246, 0.2);
+}
+
+body.dark-mode .tab-btn {
+  background: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+}
+
+body.dark-mode .tab-btn:hover {
+  background: rgba(59, 130, 246, 0.18);
+  color: #f8fafc;
+}
+
+body.dark-mode .tab-btn.active {
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  color: white;
+}
+
+body.dark-mode .close-button {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f8fafc;
+}
+
+body.dark-mode .close-button:hover {
+  background: rgba(59, 130, 246, 0.25);
+  color: white;
+}
+
+body.dark-mode .info-card {
+  background: rgba(30, 41, 59, 0.4);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+body.dark-mode .info-card h3 {
+  color: #f8fafc;
+}
+
+body.dark-mode .curiosities {
+  background: rgba(245, 158, 11, 0.12);
+  border-left-color: var(--accent-color);
+}
+
+body.dark-mode .curiosities h3 {
+  color: #f59e0b;
+}
+
+body.dark-mode .resource-card {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: rgba(59, 130, 246, 0.2);
+  color: #f8fafc;
+}
+
+body.dark-mode .resource-card:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+body.dark-mode .resource-card.primary {
+  background: linear-gradient(130deg, rgba(59, 130, 246, 0.18), rgba(16, 185, 129, 0.12));
+  border-color: var(--secondary-color);
+}
+
+body.dark-mode .resource-text h4 {
+  color: #f8fafc;
+}
+
+body.dark-mode .no-data {
+  background: rgba(59, 130, 246, 0.12);
+  color: #94a3b8;
+}
+

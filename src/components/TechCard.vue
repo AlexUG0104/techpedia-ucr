@@ -1,7 +1,7 @@
 <template>
   <article class="tech-card">
     <div class="card-header">
-      <img :src="tech.image" :alt="tech.name" class="tech-image" />
+      <img :src="`${baseUrl}${tech.image}`" :alt="tech.name" class="tech-image" />
       <div class="tech-badges">
         <span class="badge category" :class="tech.category.toLowerCase().replace(' ', '-')">
           {{ tech.category }}
@@ -30,6 +30,8 @@
 
 <script setup>
 import AudioButton from './AudioButton.vue';
+
+const baseUrl = import.meta.env.BASE_URL;
 
 defineProps({
   tech: {

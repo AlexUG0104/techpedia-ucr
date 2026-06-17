@@ -20,9 +20,7 @@ El desarrollo de este proyecto se basó en los siguientes recursos y documentaci
    - Los íconos y otros recursos gráficos de uso general provienen de **Wikimedia Commons** y repositorios libres de derechos de autor.
 
 5. **Fuentes de Audio**  
-   - Los audios descriptivos utilizados para la interactividad de la enciclopedia fueron generados utilizando herramientas de Text-to-Speech (como ElevenLabs o Clipchamp) o descargados de bibliotecas de dominio público (como Freesound bajo licencia CC0).
-   - [https://freesound.org/](https://freesound.org/)
-   - *(Nota: Reemplazar si el profesor lo requiere con la fuente exacta si se graban manualmente o se extraen de otra fuente).*
+   - Los audios son de autoria propia, grabados con la IA de audio de Google.
 
 6. **Uso de IA como Apoyo**  
    - Se utilizaron asistentes de inteligencia artificial (Gemini/ChatGPT) como guía metodológica, diseño de estructura de componentes, y mejores prácticas para CSS puro y Vue 3. La IA sirvió para acelerar el maquetado del código base de manera pedagógica para asegurar el cumplimiento de la Opción 4 del curso IF7102.
