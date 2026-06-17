@@ -97,10 +97,10 @@ npx gh-pages -d dist
 A continuación se muestran capturas representativas de la interfaz de la enciclopedia:
 
 ### 1. Vista Principal (Header con Logo UCR y Modo Claro)
-![Vista Principal en Escritorio](./public/img/Cap/Principal.png)
+![Vista Principal en Escritorio](./public/img/Cap/principal.png)
 
 ### 2. Detalle de Tecnología en Modal (Soporte de Tema Oscuro)
-![Modal de Detalles](./public/img/Cap/Modal.png)
+![Modal de Detalles](./public/img/Cap/modal.png)
 
 
 ## Notas del Proyecto
